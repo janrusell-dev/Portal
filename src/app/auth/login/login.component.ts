@@ -29,14 +29,15 @@ onSubmit() {
       
       // Use a timeout to ensure the spinner shows before the alert
       setTimeout(() => {
-        alert("Login Successfully");
-        this.loadingService.setLoading(false); // Stop loading spinner
+        // alert("Login Successfully");
+        // this.loadingService.setLoading(false);
+         // Stop loading spinner
 
         // Start loading spinner before redirecting
         this.loadingService.setLoading(true); 
         setTimeout(() => {
           window.location.href = "/"; // Navigate to homepage
-        }, 500); // Show for a short duration before navigating
+        }, 800); // Show for a short duration before navigating
       }, 100); // A short delay to show spinner before alert
     })
     .catch(error => {
