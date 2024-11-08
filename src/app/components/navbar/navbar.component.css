@@ -4,24 +4,12 @@
 .modal-content .settings{
     border-radius: 20px;
 }   
-.nav-item {
-    width: 100%; /* Ensure the nav item takes full width */
-  }
-  
-  .nav-link {
-    display: block; /* Use flex to allow text to fill space */
-    width: 100%; /* Ensure the link takes the full width */
-    padding: 10px; /* Add some padding for better spacing */
-    text-overflow: ellipsis; /* Optional: Add ellipsis for overflow */
-    overflow: hidden; /* Hide overflow */
-    white-space: nowrap; /* Prevent line breaks (use this only if you want one line) */
-  }
-  
-  .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
-  }
-  
-  .nav-link.active {
-    font-weight: bold; /* Style for active link */
-  }
-  
+
+.modal-header{
+    padding: 0.5rem 1rem; /* Adjust padding to reduce space */
+    margin-top: 0; /* Remove any default margin at the top */
+}
+
+.btn-close{
+    margin-right: 10px;
+}

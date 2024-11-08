@@ -4,81 +4,13 @@
           <img src="rdlogo.ico" alt="Logo" width="30" height="28" class="d-inline-block align-text-top">
           RD PAWNSHOP, INC.
       </a>
-      <div class="dropdown">
-        <a class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; background: none;">
-          <img *ngIf="profilePic" [src]="profilePic" alt="Profile Picture" width="30" height="30" class="rounded-circle" />
-          <svg *ngIf="!profilePic" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-          </svg>
-        </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#settingsBackdrop"><i class="bi bi-gear-fill"></i> Settings</a></li>
-              <li><a href="/login" role="button" class="dropdown-item text-decoration-none text-dark"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
-          </ul>
-      </div>
+      <a class="btn text-white" href="/login" (click)="logout()" style="border: none; background: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z"/>
+          <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+        </svg> Logout
+      </a>
   </div>  
 </nav>
 
-
-<!-- Settings Modal -->
-<div class="modal fade" id="settingsBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="settingsBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content settings"> 
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="settingsBackdropLabel">Settings</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row"> 
-          <!-- Sidebar -->
-          <div class="col-md-3">   
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" (click)="changeContent('home')"><i class="bi bi-house-fill"></i> Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" (click)="changeContent('privacy')"><i class="bi bi-shield-lock"></i> Privacy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" (click)="changeContent('account-settings')"><i class="bi bi-gear"></i> Account Settings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" (click)="changeContent('activity-log')"><i class="bi bi-clock"></i> Activity Log</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Main Content -->
-          <div class="col-md-9">
-            <div class="d-flex flex-column align-items-center text-dark " *ngIf="mainContent.title === 'Home'">
-             
-              <!-- Profile Image Display (Initially an SVG Icon) -->
-              <img *ngIf="profilePic" [src]="profilePic" alt="Profile Picture" width="100" height="100" class="rounded-circle" />
-              
-              <!-- SVG Icon (Fallback Profile Picture) -->
-              <svg *ngIf="!profilePic" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-              </svg>
-            
-              <!-- Hidden File Input -->
-              <input type="file" (change)="onFileSelected($event)" id="fileInput" class="d-none" accept="image/*">
-            
-              <!-- Custom Label -->
-              <label for="fileInput" class="btn btn-link mt-2 text-dark">Click to change</label>
-              <p>
-                What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-            </div>
-            <h1 *ngIf="mainContent.title !== 'Home'">{{mainContent.title}}</h1>
-            <p>{{mainContent.body}}</p>
-            </div>
-
-        </div>
-      </div>
-    </div>
-  </div>  
-</div>
 

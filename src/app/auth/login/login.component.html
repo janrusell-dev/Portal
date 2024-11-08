@@ -1,0 +1,42 @@
+<section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">                 
+  
+                    <div class="text-center">
+                        <img src="rdlogo.ico"
+                          style="width: 200px;" alt="logo">
+                        <h4 class="mt-4 mb-4 pb-1 text-secondary">RD Pawnshop, Inc.</h4>
+                      </div>
+
+                  <form (ngSubmit)="onSubmit()"> 
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="password" id="pin" [(ngModel)]="pin" name="pin" class="form-control"
+                       placeholder="Pin Code" maxlength="11" required/>
+                    </div>      
+                      <input class="btn btn-md btn-danger" type="submit" value="Login">
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="px-3 py-4 p-md-5 mx-md-4" style="color: lightyellow">
+                  <h6 class="mb-4">"The place that can help in times of need."</h6>
+                  <h5>Vision</h5>
+                  <p class="small mb-0">RD Pawnshop is the industry leader in 2028 by offering diversified financial services 
+                    backed by cutting-edge technology, quality customer service, well-informed marketing initiatives and a highly motivated workforce.
+                  </p>
+                  <h5 class="mt-5">Mission</h5>
+                  <p class="small mb-0">We are the most preferred pawnshop where customers feel they are valued and provided the fastest turnaround quality financial services.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

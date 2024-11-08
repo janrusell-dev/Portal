@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FilterpipePipe } from '../../filterpipe.pipe';
+import { FilterpipePipe } from '../../pipes/filterpipe.pipe';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
-import { FaqsComponent } from "../faqs/faqs.component";
-
+import { LoadingService } from '../../services/loading/loading.service';
 
 
 
@@ -19,17 +18,19 @@ interface ListItem {
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule, FilterpipePipe, FormsModule, NavbarComponent, FooterComponent, FaqsComponent],
+  imports: [CommonModule, FilterpipePipe, FormsModule, NavbarComponent, FooterComponent,],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+  isLoading = false;
   searchTerm : string = '';
   Lists : ListItem[] = [
     { name: "E-Purchasing",
       url: "#",
       img: "e-purchase.png"},
     { name: "KYC",
+
         url: "#",
         img: "kyc.png" },
         { name: "Online Pledge",
@@ -55,6 +56,4 @@ export class MainComponent {
       item.name.toLowerCase().includes(this.searchTerm.toLowerCase())
     );
 }
-
-
 }

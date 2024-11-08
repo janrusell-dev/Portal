@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './auth/login/login.component';
 import { MainComponent } from './components/main/main.component';
-import { SettingsComponent } from './components/settings/settings.component';
+import { authGuard } from './auth/auth.guard';
+
 
 export const routes: Routes = [
-    {path : "", component: MainComponent},
-    {path : "login", component: LoginComponent},
-    {path : "settings", component: SettingsComponent}
+    {path : "", component: MainComponent, canActivate: [authGuard] },
+    {path : "login", component: LoginComponent, canActivate: [authGuard] },
+    { path: '**', redirectTo: '/login' },
 
 ];
