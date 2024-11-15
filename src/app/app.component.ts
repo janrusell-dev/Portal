@@ -23,28 +23,41 @@ import { LoadingService } from './services/loading/loading.service';
 
 
 })
-export class AppComponent {
-  title : string = "Rd Pawnshop";
-  loading = false;
+// export class AppComponent {
+//   title : string = "Rd Pawnshop";
+//   loading = false;
 
-  constructor(private router: Router, private loadingService: LoadingService) {
-    // Subscribe to router events
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationStart) {
-        this.loadingService.setLoading(true); // Show spinner on route change start
-      } 
-      else if (
-        event instanceof NavigationEnd || 
-        event instanceof NavigationCancel || 
-        event instanceof NavigationError
-      ) {
-        this.loadingService.setLoading(false); // Hide spinner on route change end
-      }
-    });
+//   constructor(private router: Router, private loadingService: LoadingService) {
+//     // Subscribe to router events
+//     this.router.events.subscribe(event => {
+//       if (event instanceof NavigationStart) {
+//         this.loadingService.setLoading(true); // Show spinner on route change start
+//       } 
+//       else if (
+//         event instanceof NavigationEnd || 
+//         event instanceof NavigationCancel || 
+//         event instanceof NavigationError
+//       ) {
+//         this.loadingService.setLoading(false); // Hide spinner on route change end
+//       } 
+//     });
 
-    // Listen for changes in loading state
-    this.loadingService.getLoadingState().subscribe((loadingState: boolean) => {
-      this.loading = loadingState;
-    });
+//     // Listen for changes in loading state
+//     this.loadingService.getLoadingState().subscribe((loadingState: boolean) => {
+//       this.loading = loadingState;
+//     });
+//   }
+// }
+export class AppComponent implements OnInit {
+  constructor(private loadingService: LoadingService) {}
+
+  ngOnInit(): void {
+    // Show the spinner globally when the app is loading
+    this.loadingService.setLoading(true);
+
+    // Simulate app initialization or data loading
+    setTimeout(() => {
+      this.loadingService.setLoading(false);  // Hide the spinner after initialization
+    }, 600); // You can replace this with real async calls like HTTP requests
   }
 }

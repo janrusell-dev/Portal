@@ -14,7 +14,8 @@
   }
   
   .card-body {
-    padding: 1.5rem;
+    padding: 0.8rem;
+    /* padding: 15px; */
   }
   
   .card-title a {
@@ -44,4 +45,66 @@
     border-color: black;
   }
 
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; 
+  }
+  
+ 
+  th {
+    background-color: #b22222;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    /* border: 1px solid #dddddd; */
+  }
+  
+  td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
 
+  tr:nth-child(even) {
+    background-color: #e8e8e8;
+  }
+  
+  
+  div[style*="overflow-y"] table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+/* Custom Scrollbar */
+div[style*="overflow-y: auto;"]::-webkit-scrollbar {
+  width: 10px; 
+}
+
+div[style*="overflow-y: auto;"]::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 10px; 
+  border: 3px solid #e8e8e8; 
+}
+
+div[style*="overflow-y: auto;"]::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+div[style*="overflow-y: auto;"]::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+  border-radius: 10px;
+}
+
+div[style*="overflow-y: auto;"]::-webkit-scrollbar-track:hover {
+  background-color: #f1f1f1; 
+}
+
+div[style*="overflow-y: auto;"]::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+ .serviceUrl{
+  text-decoration: none;
+  /* color: #343a40; */
+ }

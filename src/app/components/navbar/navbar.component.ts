@@ -28,6 +28,6 @@ export class NavbarComponent {
      setTimeout(() => {
       this.loadingService.setLoading(false); // Hide spinner
       this.router.navigate(['/login']); // Navigate to login
-    }, 3000); 
+    }, 10000); 
    }
 }

@@ -9,7 +9,9 @@ export const authGuard: CanActivateFn = (route, state) => {
   const loadingService = inject(LoadingService);
 
   if (typeof window !== 'undefined') {
+    
     const storedHashedPin = sessionStorage.getItem('hashedPin'); 
+    
 
     const isLoginPage = route.routeConfig?.path === 'login';
     
