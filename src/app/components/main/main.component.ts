@@ -51,52 +51,43 @@ export class MainComponent {
     { name: "RD Operation V3",
       url: "#",
       img: "RDOPSV3.png" },
-                   
-    { name: "RD Operation V3",
-      url: "#",
-      img: "RDOPSV3.png" },   
-    { name: "RD Operation V3",
-      url: "#",
-      img: "RDOPSV3.png" },                                 
+                               
+                         
   ];
 
   //List items of RD Downloadable apps
   RDLinkList : Links[] = [
     {
-      RDserviceName : "E-Purchasing",
-      RDserviceUrl: "https://www.youtube.com/"
+      RDserviceName : "CRDR",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinecrdr/publish.htm"
     },
     {
-      RDserviceName : "KYC",
-      RDserviceUrl: "https://www.youtube.com/"
+      RDserviceName : "REMACT",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/remact/publish.htm"
     },
     {
-      RDserviceName : "KYC",
-      RDserviceUrl: "https://www.youtube.com/"
+      RDserviceName : "ERP Viewer",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/ERP_CRDRViewer/publish.htm"
     },
     {
-      RDserviceName : "KYC",
-      RDserviceUrl: "https://www.youtube.com/"
-    }
-    ,
+      RDserviceName : "DTR",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/WinApplication/edtr/publish.htm"
+    },
     {
-      RDserviceName : "KYC",
-      RDserviceUrl: "https://www.youtube.com/"
-    }
-    ,
+      RDserviceName : "POS",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/ecr/publish.htm"
+    },
     {
-      RDserviceName : "KYC",
-      RDserviceUrl: "https://www.youtube.com/"
-    }
-    ,
+      RDserviceName : "RDPadala",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/RDCashOpsV3/publish.htm"
+    },
     {
-      RDserviceName : "KYC",
-      RDserviceUrl: "https://www.youtube.com/"
-    }
-    ,
+      RDserviceName : "OSS",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinesales/publish.htm"
+    },
     {
-      RDserviceName : "KYC",
-      RDserviceUrl: "https://www.youtube.com/"
+      RDserviceName : "KRA",
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/kra/publish.htm"
     }
   ];
 
