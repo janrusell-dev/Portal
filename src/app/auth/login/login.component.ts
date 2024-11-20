@@ -27,15 +27,15 @@ onSubmit() {
       const hashedPin = data.hashedPin;
       sessionStorage.setItem('hashedPin', hashedPin);
       
-      // Use a timeout to ensure the spinner shows before the alert
+    
       setTimeout(() => {
 
         // Start loading spinner before redirecting
         this.loadingService.setLoading(true); 
         setTimeout(() => {
           window.location.href = "/"; // Navigate to homepage
-        }, 800); // Show for a short duration before navigating
-      }, 100); // A short delay to show spinner before alert
+        }, 800); 
+      }, 100)
     })
     .catch(error => {
       this.loadingService.setLoading(false); // Stop loading spinner
