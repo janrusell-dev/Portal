@@ -18,20 +18,19 @@ export const authGuard: CanActivateFn = (route, state) => {
 
     if (storedHashedPin) {
       if (isLoginPage) {
-        // If authenticated and trying to access login, redirect to home
-        router.navigate(['/']); // Adjust to your desired route
-        return false; // Prevent access to the login page
+      
+        router.navigate(['/']);
+        return false;
       }
-      return true; // User is authenticated, allow access to other routes
+      return true;
     } else {
       if (isLoginPage) {
         return true; // Allow access to login page if not authenticated
       }
-      router.navigate(['/login']); // Redirect to login if not authenticated
+      router.navigate(['/login']); 
       return false; // User is not authenticated
     }
   } else {
-    // If not in browser, allow access (modify based on your requirements)
     return true;
   }
 };

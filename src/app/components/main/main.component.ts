@@ -59,35 +59,35 @@ export class MainComponent {
   RDLinkList : Links[] = [
     {
       RDserviceName : "CRDR",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinecrdr/publish.htm "
     },
     {
       RDserviceName : "REMACT",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/remact/publish.htm"
     },
     {
       RDserviceName : "ERP Viewer",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/ERP_CRDRViewer/publish.htm"
     },
     {
       RDserviceName : "DTR",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/WinApplication/edtr/publish.htm"
     },
     {
       RDserviceName : "POS",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/ecr/publish.htm"
     },
     {
       RDserviceName : "RDPadala",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/RDCashOpsV3/publish.htm"
     },
     {
       RDserviceName : "OSS",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinesales/publish.htm"
     },
     {
       RDserviceName : "KRA",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/kra/publish.htm"
     }
   ];
 
