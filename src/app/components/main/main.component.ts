@@ -34,22 +34,22 @@ export class MainComponent {
   //List items of RD Webapps links for the card loop
   Lists : ListItem[] = [
     { name: "E-Purchasing",
-      url: "https://portalv3.rdpawnshop.com/EPurchasingV2/Login",
+      url: "#",
       img: "e-purchase.png"},
     { name: "KYC",
-      url: "https://portalv3.rdpawnshop.com/KYC/KYC/Login",
+      url: "#",
       img: "kyc.png" },
     { name: "Online Pledge",
-      url: "https://portalv3.rdpawnshop.com/OnlinePledge/Account",
+      url: "#",
       img: "Online-Pledge.png"},
     { name: "OPAR",
-      url: "https://portalv3.rdpawnshop.com/OPAR/Account/Login?ReturnUrl=%2fOPAR",
+      url: "#",
       img: "OPAR.png"},
     { name: "RD Operation V2",
-      url: "https://portalv3.rdpawnshop.com/RDOperationV2/Account/Login.aspx",
+      url: "#",
       img: "RDOPSV2.png"},
     { name: "RD Operation V3",
-      url: "https://portalv2.rdpawnshop.com/RDOperationV3",
+      url: "#",
       img: "RDOPSV3.png" },
                                
                          
