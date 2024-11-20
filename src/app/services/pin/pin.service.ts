@@ -13,10 +13,10 @@ export class PinService {
   validatePin(pin: string) {
     return axios.post(this.apiUrl, { pin })
       .then(response => {
-        return response.data; // Handle the response data
+        return response.data; 
       })
       .catch(error => {
-        throw error.response.data; // Handle errors appropriately
+        throw error.response.data; 
       });
   }
 }

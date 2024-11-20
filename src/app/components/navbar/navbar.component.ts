@@ -22,12 +22,11 @@ export class NavbarComponent {
   logout() {
     this.loadingService.setLoading(true);
 
-     // Remove the stored hashedPin from session storage
      sessionStorage.removeItem('hashedPin');
     
      setTimeout(() => {
       this.loadingService.setLoading(false); // Hide spinner
-      this.router.navigate(['/login']); // Navigate to login
+      this.router.navigate(['/login']); 
     }, 10000); 
    }
 }

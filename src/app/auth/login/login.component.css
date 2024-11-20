@@ -1,14 +1,7 @@
 .gradient-custom-2 {
-    /* Fallback for old browsers */
+ 
     background: #b22222/* Fallback to red */
 
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: -webkit-linear-gradient(to right, #ff0000 0%, #ff8c00 50%, #ffd700 100%); */
-    /* Red to Dark Orange to Gold */
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background: linear-gradient(to right, #ff0000 0%, #ff8c00 50%, #ffd700 100%); */
-    /* Red to Dark Orange to Gold */
 }
 
 @media (min-width: 768px) {
