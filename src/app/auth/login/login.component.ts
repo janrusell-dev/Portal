@@ -29,9 +29,6 @@ onSubmit() {
       
       // Use a timeout to ensure the spinner shows before the alert
       setTimeout(() => {
-        // alert("Login Successfully");
-        // this.loadingService.setLoading(false);
-         // Stop loading spinner
 
         // Start loading spinner before redirecting
         this.loadingService.setLoading(true); 

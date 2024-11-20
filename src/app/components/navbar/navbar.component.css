@@ -1,13 +1,13 @@
 .dropdown-toggle::after {
-    display: none;  /* Hide the default arrow */
+    display: none;  
 }
 .modal-content .settings{
     border-radius: 20px;
 }   
 
 .modal-header{
-    padding: 0.5rem 1rem; /* Adjust padding to reduce space */
-    margin-top: 0; /* Remove any default margin at the top */
+    padding: 0.5rem 1rem; 
+    margin-top: 0;
 }
 
 .btn-close{
