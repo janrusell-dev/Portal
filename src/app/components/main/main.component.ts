@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
 
+
 interface ListItem {
   name: string;
   url: string;
@@ -50,7 +51,7 @@ export class MainComponent {
       img: "RDOPSV3.png" },                       
   ];
 
-  //List items of RD desktop apps
+  //List items of RD desktop apps                        
   RDLinkList : Links[] = [
     {
       RDserviceName : "CRDR",

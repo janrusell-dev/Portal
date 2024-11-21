@@ -15,7 +15,6 @@
   
   .card-body {
     padding: 0.8rem;
-    /* padding: 15px; */
   }
   
   .card-title a {
@@ -42,7 +41,8 @@
   .search-input{
     border-radius: 0.5rem; 
     transition: border-color 0.3s;
-    border-color: black;
+    border-color: #6c757d;
+    color: #000000;
   }
 
   .search-input:focus{
