@@ -28,11 +28,12 @@ export class AppComponent implements OnInit {
   constructor(private loadingService: LoadingService) {}
 
   ngOnInit(): void {
-
+    // Show the spinner globally when the app is loading
     this.loadingService.setLoading(true);
 
+    // Simulate app initialization or data loading
     setTimeout(() => {
-      this.loadingService.setLoading(false); 
-    }, 600);
+      this.loadingService.setLoading(false);  // Hide the spinner after initialization
+    }, 600); // You can replace this with real async calls like HTTP requests
   }
 }
