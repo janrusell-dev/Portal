@@ -4,9 +4,7 @@ import { FilterpipePipe } from '../../pipes/filterpipe.pipe';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
-import { LoadingService } from '../../services/loading/loading.service';
-
-
+// import { LoadingService } from '../../services/loading/loading.service';
 
 interface ListItem {
   name: string;
@@ -50,16 +48,14 @@ export class MainComponent {
       img: "RDOPSV2.png"},
     { name: "RD Operation V3",
       url: "https://portalv2.rdpawnshop.com/RDOperationV3",
-      img: "RDOPSV3.png" },
-                               
-                         
+      img: "RDOPSV3.png" },                 
   ];
 
   //List items of RD desktop apps
   RDLinkList : Links[] = [
     {
       RDserviceName : "CRDR",
-      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinecrdr/publish.htm "
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinecrdr/publish.htm"
     },
     {
       RDserviceName : "REMACT",
