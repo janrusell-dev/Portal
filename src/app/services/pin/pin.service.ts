@@ -6,8 +6,8 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class PinService {
-  private apiUrl = 'https://uatserver2024.rdpihocebu.com/api/oneui_api/api/pin/validate-pin'
-  //'https://localhost:7298/api/pin/validate-pin'; 
+  private apiUrl = //'https://uatserver2024.rdpihocebu.com/api/oneui_api/api/pin/validate-pin'
+  'https://localhost:7298/api/pin/validate-pin'; 
 
   constructor() { }
 
