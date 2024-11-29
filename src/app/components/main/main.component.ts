@@ -32,58 +32,58 @@ export class MainComponent {
   //List items of RD Webapps links for the card loop
   Lists : ListItem[] = [
     { name: "E-Purchasing",
-      url: "#",
-      img: "e-purchase.png"},
+      url: "https://portalv3.rdpawnshop.com/EPurchasingV2/Login",
+      img: "images/e-purchase.png"},
     { name: "KYC",
-      url: "#",
-      img: "kyc.png" },
+      url: "https://portalv3.rdpawnshop.com/KYC/KYC/Login",
+      img: "images/kyc.png" },
     { name: "Online Pledge",
-      url: "#",
-      img: "Online-Pledge.png"},
+      url: "https://portalv3.rdpawnshop.com/OnlinePledge/Account",
+      img: "images/Online-Pledge.png"},
     { name: "OPAR",
-      url: "#",
-      img: "OPAR.png"},
+      url: "https://portalv3.rdpawnshop.com/OPAR/Account/Login?ReturnUrl=%2fOPAR",
+      img: "images/OPAR.png"},
     { name: "RD Operation V2",
-      url: "#",
-      img: "RDOPSV2.png"},
+      url: "https://portalv3.rdpawnshop.com/RDOperationV2/",
+      img: "images/RDOPSV2.png"},
     { name: "RD Operation V3",
-      url: "#",
-      img: "RDOPSV3.png" },                       
+      url: "https://portalv2.rdpawnshop.com/RDOperationV3",
+      img: "images/RDOPSV3.png" },                       
   ];
 
   //List items of RD desktop apps                        
   RDLinkList : Links[] = [
     {
       RDserviceName : "CRDR",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinecrdr/publish.htm"
     },
     {
       RDserviceName : "REMACT",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/remact/publish.htm"
     },
     {
       RDserviceName : "ERP Viewer",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/ERP_CRDRViewer/publish.htm"
     },
     {
       RDserviceName : "DTR",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/WinApplication/edtr/publish.htm"
     },
     {
       RDserviceName : "POS",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/ecr/publish.htm"
     },
     {
       RDserviceName : "RDPadala",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/RDCashOpsV3/publish.htm"
     },
     {
       RDserviceName : "OSS",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/onlinesales/publish.htm"
     },
     {
       RDserviceName : "KRA",
-      RDserviceUrl: "#"
+      RDserviceUrl: "https://portalv3.rdpawnshop.com/app/winapplication/kra/publish.htm"
     }
   ];
 
