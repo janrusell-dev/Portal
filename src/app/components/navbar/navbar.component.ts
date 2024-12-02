@@ -26,7 +26,7 @@ export class NavbarComponent {
     
      setTimeout(() => {
       this.loadingService.setLoading(false); // Hide spinner
-      this.router.navigate(['/login']); 
+      this.router.navigate(['oneui/login']); 
     }, 10000); 
    }
 }

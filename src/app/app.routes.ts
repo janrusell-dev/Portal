@@ -5,8 +5,8 @@ import { authGuard } from './auth/auth.guard';
 
 
 export const routes: Routes = [
-    {path : "", component: MainComponent, canActivate: [authGuard] },
-    {path : "login", component: LoginComponent, canActivate: [authGuard] },
-    { path: '**', redirectTo: '/login' },
+    {path : "oneui", component: MainComponent, canActivate: [authGuard] },
+    {path : "oneui/login", component: LoginComponent, canActivate: [authGuard] },
+    { path: '**', redirectTo: 'oneui/login' },
 
 ];
