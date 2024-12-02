@@ -33,7 +33,7 @@ onSubmit() {
         // Start loading spinner before redirecting
         this.loadingService.setLoading(true); 
         setTimeout(() => {
-          window.location.href = "/"; // Navigate to homepage
+          window.location.href = "/oneui/"; // Navigate to homepage
         }, 800); 
       }, 100)
     })

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ApplicationModule } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet,  NavigationStart, NavigationEnd, NavigationCancel, NavigationError, Router  } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
@@ -9,6 +9,7 @@ import { MainComponent } from './components/main/main.component';
 import { LoginComponent } from './auth/login/login.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { LoadingService } from './services/loading/loading.service';
+
 
 
 

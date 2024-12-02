@@ -13,13 +13,13 @@ export const authGuard: CanActivateFn = (route, state) => {
     const storedHashedPin = sessionStorage.getItem('hashedPin'); 
     
 
-    const isLoginPage = route.routeConfig?.path === 'login';
+    const isLoginPage = route.routeConfig?.path === 'oneui/login';
     
 
     if (storedHashedPin) {
       if (isLoginPage) {
       
-        router.navigate(['/']);
+        router.navigate(['oneui']);
         return false;
       }
       return true;
@@ -27,7 +27,7 @@ export const authGuard: CanActivateFn = (route, state) => {
       if (isLoginPage) {
         return true; // Allow access to login page if not authenticated
       }
-      router.navigate(['/login']); 
+      router.navigate(['oneui/login']); 
       return false; // User is not authenticated
     }
   } else {
