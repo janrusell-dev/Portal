@@ -21,7 +21,7 @@ interface Links {
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule, FilterpipePipe, FormsModule, NavbarComponent, FooterComponent],
+  imports: [CommonModule, FormsModule, NavbarComponent, FooterComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
@@ -33,22 +33,22 @@ export class MainComponent {
   Lists : ListItem[] = [
     { name: "E-Purchasing",
       url: "https://portalv3.rdpawnshop.com/EPurchasingV2/Login",
-      img: "assets/images/e-purchase.png"},
+      img: "/assets/images/e-purchase.png"},
     { name: "KYC",
       url: "https://portalv3.rdpawnshop.com/KYC/KYC/Login",
-      img: "assets/images/kyc.png" },
+      img: "/assets/images/kyc.png" },
     { name: "Online Pledge",
       url: "https://portalv3.rdpawnshop.com/OnlinePledge/Account",
-      img: "assets/images/Online-Pledge.png"},
+      img: "/assets/images/Online-Pledge.png"},
     { name: "OPAR",
       url: "https://portalv3.rdpawnshop.com/OPAR/Account/Login?ReturnUrl=%2fOPAR",
-      img: "assets/images/OPAR.png"},
+      img: "/assets/images/OPAR.png"},
     { name: "RD Operation V2",
       url: "https://portalv3.rdpawnshop.com/RDOperationV2/",
-      img: "assets/images/RDOPSV2.png"},
+      img: "/assets/images/RDOPSV2.png"},
     { name: "RD Operation V3",
       url: "https://portalv2.rdpawnshop.com/RDOperationV3",
-      img: "assets/images/RDOPSV3.png" },                       
+      img: "/assets/images/RDOPSV3.png" },                       
   ];
 
   //List items of RD desktop apps                        

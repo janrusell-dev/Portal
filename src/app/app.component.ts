@@ -17,8 +17,8 @@ import { LoadingService } from './services/loading/loading.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, CommonModule, MainComponent,
-     FooterComponent, NavbarComponent, FormsModule, FilterpipePipe, LoginComponent, LoadingComponent],
+  imports: [RouterOutlet, CommonModule,
+    FormsModule, LoadingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 
@@ -26,6 +26,9 @@ import { LoadingService } from './services/loading/loading.service';
 })
 
 export class AppComponent implements OnInit {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   constructor(private loadingService: LoadingService) {}
 
   ngOnInit(): void {
